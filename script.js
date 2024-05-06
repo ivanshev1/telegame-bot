@@ -1,8 +1,8 @@
-import { TOKEN } from "./token.mjs";
-import { gameOptions, againOptions } from "./options.mjs";
-import TelegramApi from "node-telegram-bot-api";
+const TelegramApi = require('node-telegram-bot-api');
+const { Token } = require('./token.js');
+const { gameOptions, againOptions } = require('./options.js');
 
-const bot = new TelegramApi(TOKEN, { polling: true });
+const bot = new TelegramApi(Token, { polling: true });
 
 const chats = {}
 
